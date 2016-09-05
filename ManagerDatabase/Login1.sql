@@ -1,0 +1,1 @@
+﻿CREATE LOGIN [red\Login1] FROM WINDOWS
