@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SqlDBConnector
+namespace DataModel
 {
     using System;
     using System.Data.Entity;

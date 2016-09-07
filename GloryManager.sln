@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerBL", "ManagerBL\Mana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDBConnector", "SqlDBConnector\SqlDBConnector.csproj", "{7A59F7C0-7D4E-49A5-9E04-039F2DC34969}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{997B3460-0AC5-4E59-87B7-A00D4A5E76AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication1", "TestApplication1\TestApplication1.csproj", "{7F0AF87A-5A41-4386-89AE-F3D3C25DDB09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{7A59F7C0-7D4E-49A5-9E04-039F2DC34969}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A59F7C0-7D4E-49A5-9E04-039F2DC34969}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A59F7C0-7D4E-49A5-9E04-039F2DC34969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997B3460-0AC5-4E59-87B7-A00D4A5E76AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997B3460-0AC5-4E59-87B7-A00D4A5E76AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997B3460-0AC5-4E59-87B7-A00D4A5E76AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997B3460-0AC5-4E59-87B7-A00D4A5E76AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0AF87A-5A41-4386-89AE-F3D3C25DDB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0AF87A-5A41-4386-89AE-F3D3C25DDB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0AF87A-5A41-4386-89AE-F3D3C25DDB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0AF87A-5A41-4386-89AE-F3D3C25DDB09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

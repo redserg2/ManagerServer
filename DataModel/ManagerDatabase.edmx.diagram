@@ -6,8 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="75b00e362d0440429ae2b5ce13d373e7" Name="Диаграмма1" ZoomLevel="85" >
         <EntityTypeShape EntityType="ManagerDatabase.User" Width="1.5" PointX="0.5" PointY="0.5" />
-        <EntityTypeShape EntityType="ManagerDatabase.Group" Width="1.5" PointX="4.75" PointY="0.625" />
-        <EntityTypeShape EntityType="ManagerDatabase.MemberShip" Width="1.5" PointX="2.75" PointY="0.625" />
+        <EntityTypeShape EntityType="ManagerDatabase.Group" Width="1.5" PointX="5.875" PointY="0.75" />
+        <EntityTypeShape EntityType="ManagerDatabase.MemberShip" Width="1.5" PointX="3" PointY="0.625" />
         <AssociationConnector Association="ManagerDatabase.MemberShipUser" />
         <AssociationConnector Association="ManagerDatabase.MemberShipGroup" />
       </Diagram>
