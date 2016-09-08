@@ -7,7 +7,7 @@ using DataModel;
 
 namespace SqlDBConnector
 {
-    public class DataUOW : IDisposable
+    public class DataUOW : IDataUOW  
     {
         private ManagerDatabaseContainer _context=new ManagerDatabaseContainer();
         private IUserRepository _Users;

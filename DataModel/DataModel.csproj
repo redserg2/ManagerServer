@@ -53,6 +53,7 @@
     <Compile Include="Group.cs">
       <DependentUpon>ManagerDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="IDataUOW.cs" />
     <Compile Include="IGeneralRepository.cs" />
     <Compile Include="IGroupRepository.cs" />
     <Compile Include="IUserRepository.cs" />
@@ -97,6 +98,7 @@
     <None Include="ManagerDatabase.edmx.diagram">
       <DependentUpon>ManagerDatabase.edmx</DependentUpon>
     </None>
+    <Content Include="ManagerDatabase.edmx.sql" />
     <Content Include="ManagerDatabase.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ManagerDatabase.edmx</DependentUpon>

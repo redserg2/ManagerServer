@@ -12,7 +12,7 @@ namespace TestApplication1
     {
         static void Main(string[] args)
         {
-            using (DataUOW uow = new DataUOW())
+            using (IDataUOW uow = new DataUOW())
             {
                 foreach (User i in uow.Users.GetAll())
                 {
