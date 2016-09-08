@@ -12,6 +12,8 @@ namespace DataModel
 
         IGroupRepository Groups{get;}
 
+        IMembershipRepository Membership { get; }
+
         void Save();
     }
 }

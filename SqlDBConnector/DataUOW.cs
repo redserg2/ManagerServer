@@ -9,9 +9,10 @@ namespace SqlDBConnector
 {
     public class DataUOW : IDataUOW  
     {
-        private ManagerDatabaseContainer _context=new ManagerDatabaseContainer();
+        private ManagerDatabaseContext _context=new ManagerDatabaseContext();
         private IUserRepository _Users;
         private IGroupRepository _Group;
+        private IMembershipRepository _Membership;
 
         public IUserRepository Users
         {
@@ -64,6 +65,19 @@ namespace SqlDBConnector
         public void Save()
         {
             _context.SaveChanges();
+        }
+
+
+        public IMembershipRepository Membership
+        {
+            get
+            {
+                if (this._Membership == null)
+                {
+                    this._Membership = new MembershipRepository(_context);
+                }
+                return _Membership;
+            }
         }
     }
 }

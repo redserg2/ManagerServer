@@ -8,11 +8,11 @@ using DataModel;
 
 namespace SqlDBConnector
 {
-    public class UserRepository : RepositoryBase<ManagerDatabaseContainer>,
+    public class UserRepository : GenericRepository<ManagerDatabaseContext,User>,
         IUserRepository
         
     {
-        public UserRepository(ManagerDatabaseContainer context):base(context)
+        public UserRepository(ManagerDatabaseContext context):base(context)
         {
             
         }
@@ -30,7 +30,7 @@ namespace SqlDBConnector
 
         public List<User> GetAll()
         {
-            IQueryable<User> list=GetList<User>();
+            var list = Get();
             return list.ToList();
         }
 

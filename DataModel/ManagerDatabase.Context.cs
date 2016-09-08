@@ -13,9 +13,9 @@ namespace DataModel
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ManagerDatabaseContainer : DbContext
+    public partial class ManagerDatabaseContext : DbContext
     {
-        public ManagerDatabaseContainer()
+        public ManagerDatabaseContext()
             : base("name=ManagerDatabaseContainer")
         {
         }

@@ -8,33 +8,17 @@ using DataModel;
 
 namespace SqlDBConnector
 {
-    public class GroupRepository : RepositoryBase<ManagerDatabaseContainer>,
+    public class GroupRepository : GenericRepository<ManagerDatabaseContext,Group>,
         IGroupRepository
     {
 
-        public GroupRepository(ManagerDatabaseContainer _context)
+        public GroupRepository(ManagerDatabaseContext _context)
             : base(_context)
         {
         }
 
 
-
-        Group IGeneralRepository<Group>.FindById(object id)
-        {
-            throw new NotImplementedException();
-        }
-
-        List<Group> IGeneralRepository<Group>.GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        void IGeneralRepository<Group>.Save(Group Entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Delete(object id)
+        public new bool Delete(object id)
         {
             throw new NotImplementedException();
         }
