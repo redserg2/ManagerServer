@@ -53,11 +53,17 @@ namespace SqlDBConnector
             this.disposed = true;
         }
 
+        
+
         public void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
         }
 
+        public void Save()
+        {
+            _context.SaveChanges();
+        }
     }
 }

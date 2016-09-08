@@ -11,5 +11,7 @@ namespace DataModel
         IUserRepository Users { get; }
 
         IGroupRepository Groups{get;}
+
+        void Save();
     }
 }

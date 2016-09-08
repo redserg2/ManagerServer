@@ -29,14 +29,11 @@ namespace SqlDBConnector
     
         public virtual TEntity Get<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class
         {
-            predicate.CheckNotNull("Predicate value must be passed to Get<TResult>.");
-
             return _context.Set<TEntity>().Where(predicate).SingleOrDefault();
         }
 
         public virtual IQueryable<TEntity> GetList<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class
         {
-            predicate.CheckNotNull("Predicate value must be passed to GetList<TResult>.");
             try
             {
                 return _context.Set<TEntity>().Where(predicate);
