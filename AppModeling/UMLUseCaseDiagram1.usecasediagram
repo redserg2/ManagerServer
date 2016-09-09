@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d5bc0f98-6c01-4c79-b614-61712dd10354" name="UMLUseCaseDiagram1" linkedPackageId="1b22e2c7-c2f8-4afd-a17a-281d81da42ce" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="6d14081c-b7e2-44ce-a1d9-bd2251fd037c">
+      <profileInstance Id="e7785a36-5b42-48d8-ad37-f1bf0255dcdd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4f6ae090-d834-4e45-9ba9-09434dbe9fb8">
+      <profileInstance Id="44ee4004-bcb6-483a-801f-4df499b5c757" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="734a0d3f-ec05-4fda-8f79-960ba7004ae8" name="Operator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="66f9977e-d32d-4797-9273-4fcfea9d4a65" />
+        <targetEnds>
+          <association Id="d5d17a1f-1f40-463b-b5c5-5096f5f2f4ae" isDerived="false" sourceEndRoleName="Operator" targetEndRoleName="Операции с машиной" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f80189a4-1e27-4fd9-840b-1b949655d464" LastKnownName="Операции с машиной" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2b3f458-632b-43d8-b53b-a44d9135dd6b" name="Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5a45c19f-e76c-4204-97c1-5ea5276cbd98" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="972151bd-d6ce-4ebe-95d5-e3500fd4709c" name="Операции с машиной" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7c7cb862-f804-4713-90ce-1b1e8bd4bdf1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a7c36b4f-6785-4cca-8988-6c95c394a46b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="13a1586b-ee63-46a6-b7eb-4c632d87308a" name="ComClient" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bdd8923a-d938-4614-b544-5bede357a0f5" />
+        <targetEnds>
+          <association Id="b5c291d4-9f6f-4f60-85a6-a33bbbb3373d" isDerived="false" sourceEndRoleName="ComClient" targetEndRoleName="Server service" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="6edcf2ad-9e1a-4b53-b565-9a37cf96071b" LastKnownName="Server service" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59d662e8-1a58-4614-900c-f8033a706c97" name="ComClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8f5470af-fef4-4a67-b036-3009870731f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14f094f1-5161-4942-8fe0-ec7648fb8e8a" name="Server service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="16eec01b-2f8d-45fd-a7a9-174e90ff498e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1ed3893d-4b28-493d-9958-7db89ea528f4" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="13843ab8-21d6-475c-aa44-e072f5e105d8" name="Glory Machine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ff0b4d51-ea88-4ec0-9cc7-fd714709302d" />
+        <targetEnds>
+          <association Id="21fb94dd-e84d-47d3-906c-2ae00007d3de" isDerived="false" sourceEndRoleName="Glory Machine" targetEndRoleName="ComClient" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="13a1586b-ee63-46a6-b7eb-4c632d87308a" LastKnownName="ComClient" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05699d9e-ba5d-40ad-883f-a0eda0fb3c5e" name="Glory Machine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc4f2cb3-b553-419d-8a52-0c7e7865f693" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d53c25d2-d16e-42e6-95b2-bd3ca1d59288" name="ComClient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6fe163ae-c628-4b49-9e3e-2ae1bc82f61b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="54d8b870-6846-41d9-ba19-2599bb98a672" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="f80189a4-1e27-4fd9-840b-1b949655d464" name="Операции с машиной" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7df16bcd-6af9-42bc-9e07-449fdb5f7534" />
+        <subjects>
+          <subsystemMoniker Id="13843ab8-21d6-475c-aa44-e072f5e105d8" LastKnownName="Glory Machine" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="6edcf2ad-9e1a-4b53-b565-9a37cf96071b" name="Server service" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ac6e2781-2235-45da-b759-3455fef94edf" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="bec16fa5-493b-4217-ae7b-0cf6daf38cd8" name="Настройка и установка" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a5d9b7b2-fa8c-48e1-9974-d683f8f14293" />
+        <subjects>
+          <subsystemMoniker Id="13a1586b-ee63-46a6-b7eb-4c632d87308a" LastKnownName="ComClient" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="ecd7d115-b1e7-42c1-8070-070cc030384b" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6c65c4b-8cc5-4df0-b796-03019e3d3c26" />
+        <targetEnds>
+          <association Id="8710a652-da15-4363-b11a-e95eb2a2f2a5" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Настройка и установка" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bec16fa5-493b-4217-ae7b-0cf6daf38cd8" LastKnownName="Настройка и установка" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a3118550-0fec-48e5-93d8-2d7393285db9" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b5618e5c-2fd7-49fc-873d-e10d21fd4861" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1c5c551-a3c5-4bed-80c5-8725761c4e99" name="Настройка и установка" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e8575b60-c5eb-4333-8426-e010a9febc91" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="28dcf4a1-1b95-4070-9492-ba71ecf45bc5" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" name="Вебморда" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e9bc417a-da74-4e7a-a819-db6826d63938" />
+        <targetEnds>
+          <association Id="db5f3c40-fa04-4648-b9d4-96e726d839ef" isDerived="false" sourceEndRoleName="Вебморда" targetEndRoleName="Server service" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="6edcf2ad-9e1a-4b53-b565-9a37cf96071b" LastKnownName="Server service" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f69151b-380e-4357-af2e-ffdf5d1c5b3f" name="Вебморда" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="841b50cf-bf94-46d9-8d84-6ea75d1ae06d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="553db7c2-b93d-4eb0-a2ba-7fd1d7b59cf0" name="Server service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3158dd50-9564-4e8f-b98b-3b407e3e1b3c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4cd78e3c-f079-4bb4-8671-953234e452a7" />
+          </association>
+        </targetEnds>
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4e90d2cd-97e3-4812-863a-3bbb298f93e2" name="Monitoring" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="185b4b7e-becb-4162-a96a-ff2ccaca6cf2" />
+        <targetEnds>
+          <association Id="ad1e4b6c-9836-4bdd-8677-79590f878f06" isDerived="false" sourceEndRoleName="Monitoring" targetEndRoleName="Выполнение удаленной команды" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="155a8c70-1a5b-471f-8099-77b2f91f5c52" LastKnownName="Выполнение удаленной команды" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8184c7ed-ca47-4b0f-a451-7346d0df851e" name="Monitoring" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="40127c65-427c-403a-8716-fea8cd998139" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="573f61eb-8d6b-4c5d-8c71-71674d63403e" name="Выполнение удаленной команды" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f3d1eda-b55f-488b-b370-72cf5bb94bbe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="77654d16-9142-4a8b-bf48-f696babbbd31" />
+          </association>
+          <association Id="e5cd90fb-5e02-4122-b836-2d47921910eb" isDerived="false" sourceEndRoleName="Monitoring" targetEndRoleName="Просмотр ошибок" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="827fca49-c7f0-4574-a834-5fd9955de985" LastKnownName="Просмотр ошибок" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc4f4e13-dbab-4ae6-9e1b-43f8c3b1e33a" name="Monitoring" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a3e24d6a-59f4-45c9-a7c2-3615f6e6b4b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cbeaff4-5243-4050-a250-e4d5c9aaa988" name="Просмотр ошибок" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a167d923-feea-4a1b-8231-0bea35738bda" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="54339538-b29b-4d6c-b698-58ee7b039623" />
+          </association>
+          <association Id="8deb55b5-88ef-4f4d-aa0b-7aff360dbac2" isDerived="false" sourceEndRoleName="Monitoring" targetEndRoleName="Просмотр статуса оборудования в отделении" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a034b794-8ae1-4a23-b70c-e3deb168ae38" LastKnownName="Просмотр статуса оборудования в отделении" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="753c03eb-90ae-407b-a4a8-15f08dd520cd" name="Monitoring" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8ca283ed-e8ea-4c8e-9424-99e8051a861f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39378d67-6229-4f4b-a325-3420e160e96e" name="Просмотр статуса оборудования в отделении" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d2c2eea6-c28b-4ccd-95f6-10fd8d7f6bea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e594fc33-e128-428e-8ad1-fa2c6eba79c4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="827fca49-c7f0-4574-a834-5fd9955de985" name="Просмотр ошибок" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ae1b5cf6-c6c5-45f4-97e2-181480f8617d" />
+        <extendedCases>
+          <extend Id="e5e5eee1-a765-4178-8f3f-7b23089f8312">
+            <useCaseMoniker Id="a9fbdae6-ee9b-4279-876c-225f3d13bcc8" LastKnownName="Фильтровать" />
+            <elementDefinition Id="f1630f13-5800-4c30-ae9b-f5b6e6fcfa6d" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include Id="c60d41ba-eae8-4d29-86ae-93e8758b3f97">
+            <useCaseMoniker Id="642cbdc9-c5cc-4832-9b65-215a7aedf1f9" LastKnownName="Выбрать ошибку" />
+            <elementDefinition Id="76535bd6-3d68-4e58-a47e-ed36844f8977" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="155a8c70-1a5b-471f-8099-77b2f91f5c52" name="Выполнение удаленной команды" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9547f614-89a9-4bda-a002-523fc3cf7af0" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="a034b794-8ae1-4a23-b70c-e3deb168ae38" name="Просмотр статуса оборудования в отделении" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a5bf6eea-d3d7-4c97-88a0-37c947ddf9d7" />
+        <additions>
+          <include Id="f496ea79-1a24-488b-91ab-a24e43d019cc">
+            <useCaseMoniker Id="18927a6d-4615-44be-ad97-6b0b5e3d3437" LastKnownName="Выбрать отделение" />
+            <elementDefinition Id="68103d83-6a23-41e1-93ce-0cab0ab35973" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="18927a6d-4615-44be-ad97-6b0b5e3d3437" name="Выбрать отделение" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b6b438c2-0ffd-473d-a5db-371ca8a8507b" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a9fbdae6-ee9b-4279-876c-225f3d13bcc8" name="Фильтровать" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="33cffd5c-fa54-4598-9a9f-1533966da641" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="eb816523-599a-4d3e-9255-fb60466f24a1" name="По  отделению" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d31e77d0-90ea-4edd-b07e-800fecefc255" />
+        <generalsInternal>
+          <generalization Id="f1d56b53-efd2-43e3-944d-f7318a82c973" isSubstitutable="false">
+            <useCaseMoniker Id="a9fbdae6-ee9b-4279-876c-225f3d13bcc8" LastKnownName="Фильтровать" />
+            <elementDefinition Id="d6e40a77-7565-466b-8849-58565a48e9b1" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="0488a408-76ca-43e6-bdd5-2b3db1735239" name="По типу ошибки" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="67cf44fa-8e3a-41a4-9714-95f316cd4fb1" />
+        <generalsInternal>
+          <generalization Id="592f75f7-c4d3-4f66-b582-350f6995e1e8" isSubstitutable="false">
+            <useCaseMoniker Id="a9fbdae6-ee9b-4279-876c-225f3d13bcc8" LastKnownName="Фильтровать" />
+            <elementDefinition Id="3eecac82-6456-41e8-86a5-be8f07fcaf46" />
+          </generalization>
+        </generalsInternal>
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="642cbdc9-c5cc-4832-9b65-215a7aedf1f9" name="Выбрать ошибку" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="86421004-bef8-417c-9e26-9dc1175e4ff1" />
+        <suppliersInternal>
+          <dependency Id="abcd6285-93b1-4b4f-9d7e-27c76564c217">
+            <useCaseMoniker Id="a9fbdae6-ee9b-4279-876c-225f3d13bcc8" LastKnownName="Фильтровать" />
+            <elementDefinition Id="a3dd591c-c805-4fff-bbd2-d96126b47b12" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="d1d91522-d31c-42a9-8f2e-9784dbbe51e8">
+            <useCaseMoniker Id="c4990b00-736f-407a-8073-8e6fb25d59e9" LastKnownName="Устранить ошибку" />
+            <elementDefinition Id="aa38d3d9-feeb-459e-876a-762af0d97f2d" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ef4fc837-2ab3-42f4-999f-64df97ca36de" name="Создать заявку" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6bc34258-5347-4e90-96c9-bc15d7af3f23" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c4990b00-736f-407a-8073-8e6fb25d59e9" name="Устранить ошибку" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4eed558a-9e3f-448d-876a-565e631bb3bc" />
+        <additions>
+          <include Id="3934891b-6ff0-425d-af02-0f7f44e27abb">
+            <useCaseMoniker Id="b82fc9f7-fcda-4724-98f3-4ddce3d2b5b7" LastKnownName="Решение в телефонном режиме" />
+            <elementDefinition Id="f1f38980-c6bc-43be-95b8-1fc784eae43e" />
+          </include>
+          <include Id="698b2e5a-b2e2-49ab-95b4-9e4742d9a6c1">
+            <useCaseMoniker Id="ef4fc837-2ab3-42f4-999f-64df97ca36de" LastKnownName="Создать заявку" />
+            <elementDefinition Id="d3fbeefe-adaf-45c1-9191-abbef0db0a03" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b82fc9f7-fcda-4724-98f3-4ddce3d2b5b7" name="Решение в телефонном режиме" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27d8699c-0452-4ebf-8642-a377b42dcc94" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="c4de4818-ca7a-4c74-8713-5dc0b41900df" name="Service manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="caee8a9c-9834-4f4b-b2a5-0d62f050c505" />
+        <targetEnds>
+          <association Id="c519a8cb-4dc3-4601-b968-c7d5019a2fe7" isDerived="false" sourceEndRoleName="Service manager" targetEndRoleName="Просмотр заявок" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4a0062fb-5bf5-4be8-ad53-ee5293f6ca42" LastKnownName="Просмотр заявок" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f00f541-1cbc-4dda-abf3-2477f138927e" name="Service manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8fee8556-bd25-4674-9f05-36a42a3dfc0a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc21392f-1eb3-46d3-9408-ead3f228de5d" name="Просмотр заявок" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5b8d6194-cb37-4909-b381-b1ec423b6702" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="5107f679-d654-4b57-9a49-91b765d0ed2f" name="realization" profile="StandardProfileL2">
+                <elementDefinition Id="afe43ef3-85bd-4ee4-aad1-3b672673e983" />
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="5770da45-1a87-4172-a770-2fc38c8003ea" />
+          </association>
+          <association Id="0bbbee03-1a6d-45bb-b499-c8489e28e600" isDerived="false" sourceEndRoleName="Service manager" targetEndRoleName="Закрытие заявки" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="74ff3042-ec54-4e91-831c-9bef9e7a2f0c" LastKnownName="Закрытие заявки" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="076989cf-a8ab-4fc3-b1a8-6c7562755395" name="Service manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9fbf06dc-039e-4ed7-a266-43e6a30875dd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ec37eef-a066-4db4-a58f-ef063debb64c" name="Закрытие заявки" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8e833ebb-29a6-429c-887c-2d6e93d90d2b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e75cdd3f-8192-4334-8d82-748abbcd090b" name="realization" profile="StandardProfileL2">
+                <elementDefinition Id="78fc3bf5-05fe-4478-b7a7-8c121fb46c50" />
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="2b1a0920-2fac-4593-a19e-c28396bd0618" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="4a0062fb-5bf5-4be8-ad53-ee5293f6ca42" name="Просмотр заявок" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7a141ea0-e983-4f65-888e-aca9337b7e0f" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="74ff3042-ec54-4e91-831c-9bef9e7a2f0c" name="Закрытие заявки" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3271f2cf-382b-4748-af08-50af35fdedbe" />
+        <additions>
+          <include Id="b40fba5d-d5cc-4b9d-9f84-9b5a65ac4732">
+            <useCaseMoniker Id="528496e7-5d8b-4763-ada4-2b6127a21a94" LastKnownName="Указать причину" />
+            <elementDefinition Id="108cbc4f-19dc-480a-bf8a-16d753f32684" />
+          </include>
+          <include Id="8e907f33-b57d-4edb-a451-12415f380c2a">
+            <useCaseMoniker Id="fe9000fb-e52b-40fa-94f5-860406ab36ef" LastKnownName="Подтвердить" />
+            <elementDefinition Id="9926ceb5-b228-4cd7-a966-04eacb401b88" />
+          </include>
+          <include Id="2723336d-6a2e-4fb6-b8ac-e0b6a0207ebf">
+            <useCaseMoniker Id="c2f24ee5-e03b-42b3-bc74-59f7c80616dc" LastKnownName="Указать вариант решения" />
+            <elementDefinition Id="1e8e50db-7588-4fc6-9968-74e909b8333e" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="528496e7-5d8b-4763-ada4-2b6127a21a94" name="Указать причину" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1724fb60-da39-4da3-a757-9fff08b052a7" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fe9000fb-e52b-40fa-94f5-860406ab36ef" name="Подтвердить" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="39a66d1f-4f41-4575-984c-d9b16db15892" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c2f24ee5-e03b-42b3-bc74-59f7c80616dc" name="Указать вариант решения" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b8bac749-7a8e-460c-a271-b8a3ca8cf0b9" />
+        <subjects>
+          <subsystemMoniker Id="0ec5018d-070c-4fe4-9673-79ad65ffdc7c" LastKnownName="Вебморда" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="1b22e2c7-c2f8-4afd-a17a-281d81da42ce" name="AppModeling">
+    <elementDefinition Id="ab738b0a-f271-4711-9f6d-d7d5f5008f2b" />
+  </package>
+</useCaseModelRoot>

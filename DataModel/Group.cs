@@ -14,6 +14,7 @@ namespace DataModel
     
     public partial class Group
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Group()
         {
             this.MemberShips = new HashSet<MemberShip>();

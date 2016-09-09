@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="8258eb86-ddd0-4a41-ad01-34f5ef3a223f" name="UMLComponentDiagram1" linkedPackageId="375fddd0-5290-4d3a-ac82-f1468a4ae145" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="18960d8d-173a-43f4-b1e1-31841a80807a">
+      <profileInstance Id="9e6ec5f6-12cf-43e3-9940-6a2ba8db8735" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c3fa7546-4d27-4635-b5d4-8cc40165f974">
+      <profileInstance Id="ebc9981c-7544-4e82-9367-f554c7f41126" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="71977ec4-40d1-463c-80b4-cfb6a49c86e4">
+      <profileInstance Id="ed8b8da3-3c3d-4152-92d4-77e7ebfcb8f7" name="CSharpProfile">
+        <elementDefinition Id="d50fa021-dc1d-4b16-99b4-2a93f73c82ec" />
+      </profileInstance>
+      <elementDefinition Id="449d6b54-1f7a-47e1-85da-149195f7589f" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="e43fcdeb-1bde-451b-8e2c-b30c68b55f50" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1aff0276-9c95-4b89-85e6-386eb260f817" />
+        <ownedAttributesInternal>
+          <providedInterface Id="aaa7e2c1-7c87-406b-87cb-005e12d1ea54" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ee6dbc8b-f23a-41c3-9711-96a4ad0cd83a" />
+            <type_NamedElement>
+              <interfaceMoniker Id="3945c783-f9b7-4360-a0f3-ec269c33f7c1" LastKnownName="IDataUOW" />
+            </type_NamedElement>
+          </providedInterface>
+          <part Id="9b034a01-cd5b-44fc-a53c-4fda8788a171" name="Part1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="8f24100d-e17a-4f2b-86c0-a0a7eab92f91" />
+            <type_NamedElement>
+              <componentMoniker Id="47924c1c-3e84-4e43-a7b2-efad13ade5f7" LastKnownName="Component4" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="3945c783-f9b7-4360-a0f3-ec269c33f7c1" name="IDataUOW" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="17ae203c-6c30-4243-bec0-87abcb584aca" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="ef254d49-0829-4459-b50a-5771ab60c310" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b97e7a12-db0f-481a-89fd-f55b18230a2b" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="21f45bd9-eaa0-4bcc-a35c-8d4d12f221af" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="4ce66ed0-75e5-4860-9285-eb6fd16f6d08" />
+            <type_NamedElement>
+              <interfaceMoniker Id="fa19242f-8653-41db-a087-6c491e6f745d" LastKnownName="Interface1" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="fa19242f-8653-41db-a087-6c491e6f745d" name="Interface1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f00616e-7341-4072-a53a-cf2a8f8d2a9d" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="47924c1c-3e84-4e43-a7b2-efad13ade5f7" name="Component4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="27a6ef9f-b06d-4de3-8a95-2be7604291ff" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="375fddd0-5290-4d3a-ac82-f1468a4ae145" name="AppModeling">
+    <elementDefinition Id="ab738b0a-f271-4711-9f6d-d7d5f5008f2b" />
+  </package>
+</componentModel>

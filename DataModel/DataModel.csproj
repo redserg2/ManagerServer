@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Group.cs">
       <DependentUpon>ManagerDatabase.tt</DependentUpon>
     </Compile>
@@ -96,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="ManagerDatabase.edmx.diagram">
       <DependentUpon>ManagerDatabase.edmx</DependentUpon>
     </None>

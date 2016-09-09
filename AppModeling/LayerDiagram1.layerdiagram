@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="148cb071-980d-4833-875f-9866d7f0e1d5" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="3ff7b3d0-b1aa-47aa-97dd-be3344842845" name="Data Acess Layer">
+      <references>
+        <reference Id="222ab927-ee93-46e8-b299-3f9fd27010dc" name="DataModel">
+          <ArtifactNode Label="DataModel" Category="CodeSchema_Project" Id="(Assembly=../DataModel/DataModel.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataModel)" Label="DataModel.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="b09cb05c-3e94-4d01-94b7-743e10a086a2" name="WCF Interface">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="f7358edf-ffbd-45b4-ac8a-efa263f39dba" direction="Forward">
+          <layerMoniker Id="4d316f54-6a83-4230-9a40-22d013b5fd8a" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="4d316f54-6a83-4230-9a40-22d013b5fd8a" name="Buisness logic">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="88c794f4-b865-4766-9d1c-bca12f35210b" direction="Forward">
+          <layerMoniker Id="3ff7b3d0-b1aa-47aa-97dd-be3344842845" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="93961509-4f2c-41a9-b8b5-3536117d9b1b" name="ManagerBL">
+          <ArtifactNode Label="ManagerBL" Category="CodeSchema_Project" Id="(Assembly=../ManagerBL/ManagerBL.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=ManagerBL)" Label="ManagerBL.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
